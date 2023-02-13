@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function AddNewTask() {
-  return (
-    <div>AddNewTask</div>
-  )
+  return <div>AddNewTask</div>;
 }

@@ -4,6 +4,24 @@ import TotalTasks from './components/totalTasks';
 import SocialNetworks from './components/socialNetworks';
 
 export default function App() {
+  const a = [
+    'hole',
+    'chau',
+    'jeje',
+    'hole',
+    'chau',
+    'jeje',
+    'hole',
+    'chau',
+    'jeje',
+    'hole',
+    'chau',
+    'jeje',
+    'hole',
+    'chau',
+    'jeje',
+  ];
+
   return (
     <>
       <header>
@@ -15,7 +33,9 @@ export default function App() {
         <TotalTasks />
       </main>
       <footer>
-        <p>Created by <em>gustavo lopez</em></p>
+        <p>
+          Created by <em>gustavo lopez</em>
+        </p>
         <SocialNetworks />
       </footer>
     </>
