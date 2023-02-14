@@ -4,28 +4,29 @@ import TotalTasks from './components/totalTasks';
 import SocialNetworks from './components/socialNetworks';
 
 export default function App() {
-  const a = [
-    'hole',
-    'chau',
-    'jeje',
-    'hole',
-    'chau',
-    'jeje',
-    'hole',
-    'chau',
-    'jeje',
-    'hole',
-    'chau',
-    'jeje',
-    'hole',
-    'chau',
-    'jeje',
-  ];
+  // const a = [
+  //   'hole',
+  //   'chau',
+  //   'jeje',
+  //   'hole',
+  //   'chau',
+  //   'jeje',
+  //   'hole',
+  //   'chau',
+  //   'jeje',
+  //   'hole',
+  //   'chau',
+  //   'jeje',
+  //   'hole',
+  //   'chau',
+  //   'jeje',
+  // ];
+  const b = 'ee';
 
   return (
     <>
       <header>
-        <h1>To Do with ReactJs</h1>
+        <h1>To Do with ReactJs {b} </h1>
       </header>
       <main>
         <AddNewTask />

@@ -57,6 +57,7 @@ then set with code below
 ```
 
 - Create a .vscode folder and settings.json inside this folder, and put of them
+
 ```
 {
     "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
@@ -64,5 +65,3 @@ then set with code below
     "editor.formatOnSave": true
 }
 ```
-
-
