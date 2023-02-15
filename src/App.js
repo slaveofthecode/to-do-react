@@ -1,24 +1,27 @@
 import ToDoAdd from './components/toDoAdd';
 import ToDoList from './components/toDoList';
-import TotalTasks from './components/totalTasks';
-import SocialNetworks from './components/socialNetworks';
+import ToDoLength from './components/toDoLength';
+import SocialNetworks from './components/common/socialNetworks';
+import { useTasks } from './hooks/useTasks';
 
 export default function App() {
+  const { tasks, setTasks } = useTasks();
+
   return (
     <>
       <header>
         <h1>
           To Do <strong>ReactJs</strong>
         </h1>
-        <ToDoAdd />
+        <ToDoAdd tasks={tasks} setTasks={setTasks} />
       </header>
 
       <main>
-        <ToDoList />
+        <ToDoList tasks={tasks} setTasks={setTasks} />
       </main>
 
       <footer>
-        <TotalTasks />
+        <ToDoLength tasks={tasks} />
         <p>
           Created by <em>gustavo lopez</em>
         </p>

@@ -1,13 +1,12 @@
-import { useTasks } from '../../hooks/useTasks';
-
-export default function ToDoList() {
-  const { tasks } = useTasks();
+export default function ToDoList({ tasks, setTasks }) {
+  console.log('ToDoList - RENDER');
 
   const DataList = ({ data }) => {
     const handleChange = ({ target }) => {
       const { id, checked } = target;
-      console.log(id, checked);
-      // console.log(tasks.findIndex((task) => task.id === id));
+
+      tasks.find((task) => task.id === parseInt(id)).isCompleted = checked;
+      setTasks([...tasks]);
     };
 
     return (
